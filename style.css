@@ -32,17 +32,16 @@ a {
 }
 
 .about-container {
+    justify-content: space-around;
     display: flex;
-    justify-content: flex-start;
-    gap: 12px;
+    gap: 2px;
 }
 
 .about {
     display: flex;
     flex-flow: column nowrap;
     max-width: 400px;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 8px;
     
 }
@@ -68,7 +67,7 @@ img {
 .imgbox {
     display: flex;
     align-self: center;
-    flex:1 1 auto;
+    flex:0 1 auto;
 }
 
 ul {
@@ -82,7 +81,6 @@ ul {
 }
 
 button {
-    flex: 1;
     background-color: royalblue;
     border-radius: 8px;
     padding: 8px 16px;  
