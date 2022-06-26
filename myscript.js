@@ -1,4 +1,4 @@
-const body = document.querySelector('body');
+const nav = document.querySelector('body');
 
 // const leftContainer = document.createElement('div');
 // const rightContainer = document.createElement('div');
