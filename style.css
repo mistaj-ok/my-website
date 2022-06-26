@@ -5,9 +5,10 @@ header {
 
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 2em;
     padding-left: 15%;
     padding-right: 15%;
-    padding-bottom: 7%;
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -37,8 +38,8 @@ a {
     display: flex;
     flex-flow: column nowrap;
     max-width: 400px;
-    justify-content: flex-start;
-    gap: 8px;
+    justify-content: space-between;
+    gap: 1em;
     
 }
 
@@ -72,13 +73,14 @@ nav ul {
     padding-left: 0;
 }
 
-ul li {
+nav ul li {
     padding: 10px 30px;
-    position: relative;    
+    position: relative;
+    transition: all 0.3s;    
 }
 
 ul li a {
-    font-size: 20px;
+    font-size: 24px;
     
 }
 
@@ -98,7 +100,7 @@ nav ul li:hover .dropdownMenu {
     left: 0;
     top: 100%;
     background-color:#1F2937;
-    border: solid 2px;
+    border: solid 2px #F9FAF8;
 
 }
 
@@ -110,6 +112,7 @@ nav ul li:hover .dropdownMenu ul {
 nav ul li:hover .dropdownMenu ul li {
     width: 150px;
     padding: 10px;
+    color: aqua;
 }
 
 .dropdownMenu ul  {
