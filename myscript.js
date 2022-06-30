@@ -1,24 +1,29 @@
-const nav = document.querySelector('body');
-
-// const leftContainer = document.createElement('div');
-// const rightContainer = document.createElement('div');
-
-
-// leftContainer.classList.add('left-side');
-// rightContainer.classList.add('right-side');
-
-
+const player = document.querySelector('.player');
+const video = player.querySelector('.viewer');
+const toggle = player.querySelector('.toggle');
 
 // //add an image to the left side
 const heroImg = document.createElement('img');
 heroImg.src = "./img/left-portrait.jpg";
-// leftContainer.appendChild(heroImg); 
-// rightContainer.textContent = "here is some filler text";
-// //create a header element
-// const header = document.querySelector('header');
-// // header content
-// const logo = document.createElement('div');
-// logo.classList.add('logo');
-// logo.textContent = "cornmuffins"
-// header.appendChild(logo);
-// // document.querySelector('header').appendChild(header);
+
+function togglePlay() {
+    console.log('hi welcome to chilis');
+
+    const method = video.paused ? 'play' : 'pause';
+    video[method]();
+  }
+
+
+  function updateButton() {
+    const icon = this.paused ? '►' : '❚ ❚';
+    console.log(icon);
+    toggle.textContent = icon;
+  }
+
+  video.addEventListener('click', togglePlay);
+  video.addEventListener('play', updateButton);
+  video.addEventListener('pause', updateButton);  
+
+  toggle.addEventListener('click', togglePlay);
+
+
