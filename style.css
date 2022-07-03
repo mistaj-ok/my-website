@@ -106,6 +106,9 @@ h2 {
     flex-direction: column;
     align-content: center;
 }
+.img-box.open {
+    flex: 3;
+}
 .img-box .box-border {
     width: 200px;
     height: 200px;
@@ -185,6 +188,13 @@ button {
     padding: 8px 16px;  
     color: rgb(246, 232, 234);
     max-height: fit-content;
+}
+.header-button:hover {
+    background-color: hotpink;        
+}
+button:active{
+    transform: translateY(4px);
+    box-shadow: 0 4px #666;
 }
 
 .player__button {
