@@ -1,0 +1,157 @@
+/* <-- use to "reset" page state --> */
+html, 
+body,
+div,
+nav,
+footer,
+ul,
+li,
+form {
+    margin: 0;
+    padding: 0;
+	outline: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-size: 100%;
+}
+
+a {
+    color: #039;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #03F;  
+    text-decoration: none;  
+}
+
+
+/* 1. base */
+
+body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ul {
+        list-style-type: none;
+    }
+li:hover{
+    cursor: pointer;
+}
+
+/* 2. layout components (major) */
+
+#header {
+    position:relative;
+    min-height: 100vh;    
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px;
+}
+
+#footer {
+
+}
+
+
+
+
+
+/* 3. Modules (minor)*/
+.logo {
+    font-size: 4rem;
+}
+#nav > .r-links {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.about-container {
+    justify-content: space-around;
+    display: flex;
+    gap: 2px;
+}
+.dropdown > ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transform:translateY(10px);
+    transition: all 0.3s ease;
+}
+.dropdown ul > li {
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}   
+.r-links li {
+    position: relative; 
+}
+
+
+
+/* 4. State */
+
+.r-links li a:focus + .dropdown ul {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.dropdown ul li:hover {
+    background-color: azure;
+
+}
+
+
+/* 5. Theme */
+.hero-color {
+    background-color:#2A3357;
+    color: #F9FAF8;
+    
+}   
+.about-text {
+    color: #c1c7bc;
+    font-size: 22px;
+}
+
+.r-links {
+    font-size: 2rem;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.r-links li > a {
+    color: #3656D6;
+
+}
+.r-links li:hover > a {
+    color:#5B6EBD;
+
+}
+

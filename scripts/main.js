@@ -1,5 +1,5 @@
-const okayBtn = document.querySelector('.header-button');
-okayBtn.addEventListener('click', () => console.log('okay') );
+
+
 
 
 
