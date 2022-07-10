@@ -7,11 +7,37 @@
     <title>Nick Jones Home</title>
     <link rel="stylesheet" href="styles/style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
 </head>
-<body>
-   <header id="header"></div>
-    <main>
+<body id="page">
+    <div id="site-wrapper">
+    <header id="header">
+        <nav id='nav'>
+            <h1 class="logo">Nick Jones</h1>
+                <ul class="r-links">
+                    <li><a href="./projects/proj-landing.html">Projects <i class ="fas fa-caret-down"></i></a>
+                        <div class="dropdown">  
+                            <ul>
+                                <li><a href ="java-projs.html">java</a></li>
+                                <li><a href="#">C </a></li>
+                                <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">navPlaceHolder</a></li>
+        </ul>
+    </nav>
+    <div class="about-container">
+    <div class="about">
+             <p class="about-title">hello there...</p>
+             <div class="about-text">Welcome to my custom website.<p>This site is under regular maintenance.</p>
+                 </div>
+                 <button class="header-button">Okay</button>
+             </div>
+             </div>
+             <div class="empty-header-wrapper"></div>
+             </header>   
+    <main id="main">
         <section class="featured"><h2>featured section</h2>
             <div class="image-boxes">  
                 <div class="img-box">
@@ -59,10 +85,10 @@
      </div>
     </main>
 
-    <footer>
+    <footer id="footer">
             copyright 2022 by Nick Jones
     </footer>
-    
+</div>
 </body>
 
 

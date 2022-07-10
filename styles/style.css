@@ -1,18 +1,27 @@
 /* <-- use to "reset" page state --> */
 html, 
 body,
-div,
 nav,
 footer,
 ul,
 li,
 form {
+    color: #000;
+    background-color: #F9FAF8;
     margin: 0;
     padding: 0;
 	outline: 0;
 	border: 0;
 	vertical-align: baseline;
 	font-size: 100%;
+}
+ul {
+    list-style-type: none;
+    background: transparent;
+}
+
+li:hover {
+cursor: pointer;
 }
 
 a {
@@ -26,35 +35,39 @@ a:hover {
 }
 
 
-/* 1. base */
+/* 1. || base (element selector) */
 
 body {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin: 0;
         height: 100vh;
-        display: flex;
-        flex-direction: column;
     }
 main {
         flex: 1;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
+
     }
-ul {
-        list-style-type: none;
-    }
-li:hover{
-    cursor: pointer;
+
+/* 2. || layout components, major. (use id or '.l-' prefix class-name) */
+
+
+#site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
-
-/* 2. layout components (major) */
-
 #header {
+    
+    flex: 1;
+    max-height: 500px;
     position:relative;
-    min-height: 100vh;    
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 10px
 }
 
 #nav {
@@ -63,19 +76,19 @@ li:hover{
     justify-content: space-between;
     align-items: center;
     padding: 26px;
+    padding-bottom: 0;
 }
 
 #footer {
-
+    min-height: 50px;
 }
 
 
 
+/* 3. || Modules (minor) */
 
-
-/* 3. Modules (minor)*/
 .logo {
-    font-size: 4rem;
+    font-size: 2.8rem;
 }
 #nav > .r-links {
     display: flex;
@@ -116,11 +129,10 @@ li:hover{
 
 
 
-/* 4. State */
+/* 4. || State */
 
-.r-links li a:focus + .dropdown ul {
+.dropdown.expanded {
     opacity: 1;
-    pointer-events: all;
 }
 
 .dropdown ul li:hover {
@@ -129,12 +141,38 @@ li:hover{
 }
 
 
-/* 5. Theme */
+/* 5.  || Theme */
 .hero-color {
     background-color:#2A3357;
-    color: #F9FAF8;
-    
-}   
+    color: #F9FAF8; 
+}
+
+
+ /* 5a. || header */
+#header {
+    background-color:#2A3357;
+    color: #fff; 
+}
+#footer {
+    font-size: 2rem;
+    background-color:#2A3357;
+    color: #fff;
+    text-align: center; 
+}
+#nav {
+    background-color:#2A3357;
+    color: #fff;
+}
+#main {
+    background-color: #d0d4da;
+}
+.r-links > li {
+    background-color: transparent;
+}
+.about-container {
+    background-color:#2A3357;
+
+}
 .about-text {
     color: #c1c7bc;
     font-size: 22px;

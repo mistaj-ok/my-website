@@ -1,4 +1,15 @@
+const navDropdown = document.querySelectorAll('.r-links');
 
+function testPrint() {
+  console.log('hi welcome to chilis')
+}
+function toggleMenuExpand() {
+  this.classList.toggle('expanded')
+  console.log(this.classList);
+}
+
+// loop through list items add event listener
+navDropdown.forEach(link => {link.addEventListener('mouseover', toggleMenuExpand)});
 
 
 
