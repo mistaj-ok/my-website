@@ -14,19 +14,23 @@
     <header id="header">
         <nav id='nav'>
             <h1 class="logo">Nick Jones</h1>
-                <ul class="r-links">
-                    <li><a href="./projects/proj-landing.html">Projects <i class ="fas fa-caret-down"></i></a>
-                        <div class="dropdown">  
+            <ul class="r-links">
+                <div class="box-one">
+                <div class="btn btn-one" 
+                        onclick="show_list()"><span>Projects</span> <i class ="fas fa-caret-down"></i>
+                    <div class="dropdown">  
                             <ul>
                                 <li><a href ="java-projs.html">java</a></li>
                                 <li><a href="#">C </a></li>
                                 <li><a href="#">JavaScript</a></li>
-                    </ul>
+                            </ul>
+                        </div>
                 </div>
-            </li>
-            <li><a href="#">navPlaceHolder</a></li>
-        </ul>
-    </nav>
+                </div>
+                <div class="box-two"><span>placeHolder</span></div>
+                        
+            </ul>
+        </nav>
     <div class="about-container">
     <div class="about">
              <p class="about-title">hello there...</p>
@@ -58,21 +62,6 @@
                 </div>
         </div>
         </section>
-        <div class="player">
-            <video class="player__video viewer" src="./video/cod-cw-nuketown.mp4"></video>
-            <div class="player__controls">
-                <div class="progress">
-                 <div class="progress__filled"></div>
-                </div>
-                <button class="player__button toggle" title="Toggle Play">►</button>
-                <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
-                <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
-                <button data-skip="-10" class="player__button">« 10s</button>
-                <button data-skip="25" class="player__button">25s »</button>
-              </div>
-        </div>
-
-
 
         <div class="sign-up-box">
             <div class="text-box">
