@@ -1,8 +1,10 @@
 // navigation activities
-const projects = document.querySelector('.r-links li');
+const projects = document.querySelector('.btn.btn-one');
 const dropdown = document.querySelector('.dropdown');
 
-dropdown.ul.setAttribute('opacity', '1');
+const test = projects.getAttribute('opacity');
+console.log(test);
+
 
 // projects.addEventListener('click', 
 
