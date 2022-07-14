@@ -134,8 +134,32 @@ main {
 .r-links li {
     position: relative; 
 }
+/* featured */
+.feat-container {
+    justify-content: center;
+    width: 100vw;
+    flex: 1;
+    display: flex;
+    background-color: rgb(106, 107, 131);
+    flex-direction: column;
+}
 
+.image-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    gap: 16px;
+}
 
+.image-boxes > .img-box {
+    display: flex;
+}
+.img-box > img {
+    width: 200px;
+    justify-self: center;
+
+}
 
 /* 4. || State */
 
@@ -207,29 +231,22 @@ main {
 
 /* 5.  || Theme */
 .hero-color {
-    background-color:#2A3357;
+    background-color:rgb(3, 24, 39);
     color: #F9FAF8; 
 }
 
-
+/* header */
 #header {
-    background-color:#2A3357;
-    color: #fff; 
-}
-#footer {
-    font-size: 1rem;
-    background-color:#2A3357;
-    color: #fff;
-    text-align: center;
- 
+    background-color:rgb(3, 24, 39);
+
+    color: rgb(80, 138, 168); 
 }
 #nav {
-    background-color:#2A3357;
+    background-color:rgb(3, 24, 39);
+
     color: #fff;
 }
-#main {
-    background-color: #d0d4da;
-}
+    /* nav */
 .r-links > li {
     background-color: transparent;
 }
@@ -242,6 +259,19 @@ main {
 }
 .r-links li:hover > a {
     color:#5B6EBD;
-
 }
+
+/* footer */
+#footer {
+    font-size: 1rem;
+    background-color:rgb(3, 24, 39);
+    color: #fff;
+    text-align: center;
+ 
+}
+
+#main {
+    background-color: #d0d4da;
+}
+
 
